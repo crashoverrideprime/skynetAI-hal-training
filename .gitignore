@@ -1,0 +1,34 @@
+# Python virtual environment
+bin/
+lib/
+lib64
+include/
+share/
+pyvenv.cfg
+__pycache__/
+*.pyc
+*.pyo
+
+# HuggingFace model cache (multi-GB)
+hf_cache/
+
+# Unsloth compiled kernel cache
+unsloth_compiled_cache/
+training_runs/qwen3_8b_hal_v1/unsloth_compiled_cache/
+
+# Large model artifacts — LoRA weights, merged models, GGUF exports
+*.safetensors
+*.gguf
+training_runs/qwen3_8b_hal_v1/merged_bf16/
+training_runs/qwen3_8b_hal_v1/lora_adapter/
+training_runs/qwen3_8b_hal_v2/lora_adapter/
+training_runs/qwen3_8b_hal_v2/merged_bf16/
+
+# Dataset generation checkpoints
+*.ckpt
+
+# Training debug logs (kept in .log but not debug variant)
+train_v2_debug.log
+
+# Secrets
+!secrets
