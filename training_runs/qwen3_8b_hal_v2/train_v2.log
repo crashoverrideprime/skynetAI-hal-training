@@ -1,0 +1,17 @@
+/mnt/zardos/charm-hal-env/lib/python3.12/site-packages/huggingface_hub/constants.py:277: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+Unsloth: Your Flash Attention 2 installation seems to be broken. Using Xformers instead. No performance changes will be seen.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2026.5.2: Fast Qwen3 patching. Transformers: 5.5.0.
+   \\   /|    NVIDIA GeForce RTX 5060 Ti. Num GPUs = 1. Max memory: 15.456 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.11.0+cu128. CUDA: 12.0. CUDA Toolkit: 12.8. Triton: 3.6.0
+\        /    Bfloat16 = TRUE. FA [Xformers = None. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<00:42,  9.45it/s]Loading weights:   1%|          | 2/399 [00:00<01:22,  4.84it/s]Loading weights:   3%|▎         | 10/399 [00:00<00:16, 23.29it/s]Loading weights:  10%|▉         | 39/399 [00:00<00:03, 91.63it/s]Loading weights:  15%|█▌        | 60/399 [00:00<00:02, 121.81it/s]Loading weights:  21%|██        | 83/399 [00:00<00:02, 144.82it/s]Loading weights:  37%|███▋      | 147/399 [00:00<00:00, 273.88it/s]Loading weights:  45%|████▍     | 178/399 [00:01<00:00, 251.14it/s]Loading weights:  56%|█████▌    | 224/399 [00:01<00:00, 300.40it/s]Loading weights:  66%|██████▋   | 265/399 [00:01<00:00, 320.11it/s]Loading weights:  75%|███████▍  | 299/399 [00:01<00:00, 324.94it/s]Loading weights:  83%|████████▎ | 333/399 [00:01<00:00, 301.24it/s]Loading weights:  95%|█████████▍| 379/399 [00:01<00:00, 330.72it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 229.99it/s]
+Unsloth: Dropout = 0 is supported for fast patching. You are using dropout = 0.05.
+Unsloth will patch all other layers, except LoRA matrices, causing a performance hit.
+Unsloth 2026.5.2 patched 36 layers with 0 QKV layers, 0 O layers and 0 MLP layers.
+unsloth/qwen3-8b-unsloth-bnb-4bit does not have a padding token! Will use pad_token = <|PAD_TOKEN|>.
+Generating train split: 0 examples [00:00, ? examples/s]

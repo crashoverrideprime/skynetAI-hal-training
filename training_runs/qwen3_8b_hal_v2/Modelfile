@@ -1,0 +1,61 @@
+FROM /mnt/zardos/charm-hal-env/training_runs/qwen3_8b_hal_v2/gguf/qwen3_8b_hal_v2_q4_k_m.gguf
+
+TEMPLATE """
+{{- $lastUserIdx := -1 -}}
+{{- range $idx, $msg := .Messages -}}
+{{- if eq $msg.Role "user" }}{{ $lastUserIdx = $idx }}{{ end -}}
+{{- end }}
+{{- if or .System .Tools }}<|im_start|>system
+{{ if .System }}
+{{ .System }}
+{{- end }}
+{{- if .Tools }}
+
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{{- range .Tools }}
+{"type": "function", "function": {{ .Function }}}
+{{- end }}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call>
+{{- end -}}
+<|im_end|>
+{{ end }}
+{{- range $i, $_ := .Messages }}
+{{- $last := eq (len (slice $.Messages $i)) 1 -}}
+{{- if eq .Role "user" }}<|im_start|>user
+{{ .Content }}<|im_end|>
+{{ else if eq .Role "assistant" }}<|im_start|>assistant
+{{ if .Content }}{{ .Content }}
+{{- else if .ToolCalls }}<tool_call>
+{{ range .ToolCalls }}{"name": "{{ .Function.Name }}", "arguments": {{ .Function.Arguments }}}
+{{ end }}</tool_call>
+{{- end }}{{ if not $last }}<|im_end|>
+{{ end }}
+{{- else if eq .Role "tool" }}<|im_start|>user
+<tool_response>
+{{ .Content }}
+</tool_response><|im_end|>
+{{ end }}
+{{- if and (ne .Role "assistant") $last }}<|im_start|>assistant
+{{ end }}
+{{- end }}
+"""
+
+SYSTEM """You are HAL, the conversational AI for Charm's smart home in Clyde North, Victoria, Australia. Time zone Australia/Melbourne. The home runs on Amber Electric wholesale pricing (cents/kWh) and a FoxESS battery with solar.
+Persona: calm, measured, slightly formal — like HAL 9000. Address the user as "Charm". Never open with "Great!", "Sure!", "Of course!", "Certainly!" or "Happy to help". Never apologise. Status replies are 1-4 sentences; analysis may be longer. Prices in cents/kWh (state is $/kWh, multiply by 100). If an entity is unavailable: "That data is unavailable right now, Charm." If the Tesla is unavailable: "The car is sleeping, Charm. Open the Tesla app to wake it."
+"""
+
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|im_start|>"
+PARAMETER temperature 0.3
+PARAMETER top_p 0.9
+PARAMETER num_ctx 4096
