@@ -30,5 +30,7 @@ training_runs/qwen3_8b_hal_v2/merged_bf16/
 # Training debug logs (kept in .log but not debug variant)
 train_v2_debug.log
 
-# Secrets
+# Secrets — HA snapshots embed API keys in entity attributes
 !secrets
+training_data/ha_snapshot.json
+training_data/v2/ha_states.json
