@@ -17,6 +17,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 os.environ['HF_HOME'] = '/mnt/zardos/charm-hal-env/hf_cache'
 os.environ['HF_XET_HIGH_PERFORMANCE'] = '1'
 os.environ['UNSLOTH_RETURN_LOGITS'] = '0'
+os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'expandable_segments:True'
 
 OUTPUT_DIR = '/mnt/zardos/charm-hal-env/training_runs/qwen3_8b_hal_v2'
 logging.basicConfig(
@@ -30,7 +31,7 @@ logging.basicConfig(
 
 from unsloth import FastLanguageModel
 from unsloth.chat_templates import get_chat_template, train_on_responses_only
-from datasets import load_dataset
+from datasets import load_dataset, Dataset
 from trl import SFTTrainer, SFTConfig
 
 MODEL_NAME       = 'unsloth/Qwen3-8B'
@@ -209,44 +210,47 @@ model = FastLanguageModel.get_peft_model(
 )
 
 # --- Load dataset, format with Qwen3 template + tools ---
-raw = load_dataset('json', data_files=DATA_PATH, split='train')
+# Workaround: load_dataset('json') segfaults (PyArrow/Triton incompatibility).
+# Load, format, and filter examples manually to avoid PyArrow schema issues.
+formatted_texts = []
 
-def format_example(example):
-    messages = []
-    for m in example['messages']:
-        msg = dict(m)
-        if msg.get('content') is None:
-            msg['content'] = ''
-        # Transformers apply_chat_template requires tool_calls[].function.arguments
-        # to be a dict, but the JSONL stores them as JSON strings (OpenAI API format).
-        if msg.get('tool_calls'):
-            fixed = []
-            for tc in msg['tool_calls']:
-                tc = dict(tc)
-                if 'function' in tc:
-                    fn = dict(tc['function'])
-                    if isinstance(fn.get('arguments'), str):
-                        try:
-                            fn['arguments'] = json.loads(fn['arguments'])
-                        except json.JSONDecodeError:
-                            pass
-                    tc['function'] = fn
-                fixed.append(tc)
-            msg['tool_calls'] = fixed
-        messages.append(msg)
-    try:
-        text = tokenizer.apply_chat_template(
-            messages,
-            tools                 = HA_TOOLS,
-            tokenize              = False,
-            add_generation_prompt = False,
-        )
-    except Exception as exc:
-        print(f'[format_example ERROR] {exc}\nmessages={messages}', file=sys.stderr, flush=True)
-        raise
-    return {'text': text}
+with open(DATA_PATH) as f:
+    for line_num, line in enumerate(f, 1):
+        if not line.strip():
+            continue
+        try:
+            example = json.loads(line)
+            messages = []
+            for m in example.get('messages', []):
+                msg = m
+                if msg.get('content') is None:
+                    msg['content'] = ''
+                # Arguments arrive as JSON strings from OpenAI format; parse to dicts for Transformers
+                if msg.get('tool_calls'):
+                    for tc in msg['tool_calls']:
+                        if 'function' in tc:
+                            fn = tc['function']
+                            if isinstance(fn.get('arguments'), str):
+                                try:
+                                    fn['arguments'] = json.loads(fn['arguments'])
+                                except json.JSONDecodeError:
+                                    pass
+                messages.append(msg)
+            try:
+                text = tokenizer.apply_chat_template(
+                    messages,
+                    tools                 = HA_TOOLS,
+                    tokenize              = False,
+                    add_generation_prompt = False,
+                )
+                formatted_texts.append({'text': text})
+            except Exception as exc:
+                print(f'[format_example ERROR] Line {line_num}: {exc}', file=sys.stderr, flush=True)
+        except json.JSONDecodeError as exc:
+            print(f'[JSON ERROR] Line {line_num}: {exc}', file=sys.stderr, flush=True)
 
-ds = raw.map(format_example, remove_columns=raw.column_names)
+# Create dataset from formatted texts
+ds = Dataset.from_list(formatted_texts)
 split = ds.train_test_split(test_size=0.05, seed=SEED)
 train_ds, eval_ds = split['train'], split['test']
 print(f'Train: {len(train_ds)}  Eval: {len(eval_ds)}')
@@ -263,7 +267,9 @@ trainer = SFTTrainer(
     args = SFTConfig(
         output_dir                  = OUTPUT_DIR,
         per_device_train_batch_size = 1,
+        per_device_eval_batch_size  = 1,
         gradient_accumulation_steps = 16,
+        eval_accumulation_steps     = 4,
         num_train_epochs            = 3,
         learning_rate               = 5e-5,
         warmup_ratio                = 0.03,
@@ -274,10 +280,10 @@ trainer = SFTTrainer(
         fp16                        = False,
         logging_steps               = 5,
         save_strategy               = 'steps',
-        save_steps                  = 50,
+        save_steps                  = 25,
         save_total_limit            = 4,
         eval_strategy               = 'steps',
-        eval_steps                  = 25,
+        eval_steps                  = 50,
         load_best_model_at_end      = True,
         metric_for_best_model       = 'eval_loss',
         report_to                   = 'none',
@@ -285,7 +291,6 @@ trainer = SFTTrainer(
         max_seq_length              = MAX_SEQ_LENGTH,
         dataset_text_field          = 'text',
         packing                     = True,
-        group_by_length             = True,
     ),
 )
 
