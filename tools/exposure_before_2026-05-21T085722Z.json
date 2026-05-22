@@ -1,0 +1,922 @@
+{
+  "sensor.foxess_modbus_skynet_sun_harvester_pv_power_skynet_sun_harvester": {
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_inv_power_r": {
+    "cloud.alexa": true,
+    "cloud.google_assistant": true,
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_inv_power_s": {
+    "cloud.alexa": true,
+    "cloud.google_assistant": true,
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_inv_power_t": {
+    "cloud.alexa": true,
+    "cloud.google_assistant": true,
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_feed_in_r": {
+    "cloud.alexa": true,
+    "cloud.google_assistant": true,
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_invtemp": {
+    "conversation": true
+  },
+  "climate.izone_controller_402001095": {
+    "conversation": true
+  },
+  "climate.downstairs": {
+    "conversation": true
+  },
+  "climate.upstairs": {
+    "conversation": true
+  },
+  "climate.zone_3": {
+    "conversation": true
+  },
+  "media_player.kdl_55w800c": {
+    "conversation": true
+  },
+  "media_player.shield": {
+    "conversation": true
+  },
+  "todo.shopping_list": {
+    "conversation": true
+  },
+  "media_player.home_theater": {
+    "conversation": true
+  },
+  "media_player.home_theater_2": {
+    "conversation": true
+  },
+  "media_player.living_tv_50i_bravia_2015_es_192_168_1_117": {
+    "conversation": true
+  },
+  "switch.left_side_floodlight": {
+    "conversation": true
+  },
+  "switch.garage_floodlight": {
+    "conversation": true
+  },
+  "switch.front_left_floodlight": {
+    "conversation": true
+  },
+  "switch.garage_door_channel_1": {
+    "conversation": true
+  },
+  "switch.garage_door_channel_2": {
+    "conversation": true
+  },
+  "sensor.openweathermap_weather": {
+    "conversation": true
+  },
+  "sensor.openweathermap_dew_point_temperature": {
+    "conversation": true
+  },
+  "sensor.openweathermap_temperature": {
+    "conversation": true
+  },
+  "sensor.openweathermap_apparent_temperature": {
+    "conversation": true
+  },
+  "sensor.openweathermap_humidity": {
+    "conversation": true
+  },
+  "sensor.openweathermap_cloud_coverage": {
+    "conversation": true
+  },
+  "vacuum.kunurobo": {
+    "conversation": true
+  },
+  "binary_sensor.charm_house_price_spike": {
+    "conversation": true
+  },
+  "sensor.charm_house_general_price": {
+    "conversation": true
+  },
+  "sensor.charm_house_feed_in_price": {
+    "conversation": true
+  },
+  "sensor.charm_house_general_price_descriptor": {
+    "conversation": true
+  },
+  "switch.rain_bird_sprinkler_1": {
+    "conversation": true
+  },
+  "switch.rain_bird_sprinkler_2": {
+    "conversation": true
+  },
+  "switch.rain_bird_sprinkler_3": {
+    "conversation": true
+  },
+  "switch.rain_bird_sprinkler_4": {
+    "conversation": true
+  },
+  "switch.rain_bird_sprinkler_5": {
+    "conversation": true
+  },
+  "switch.rain_bird_sprinkler_6": {
+    "conversation": true
+  },
+  "switch.rain_bird_sprinkler_7": {
+    "conversation": true
+  },
+  "switch.rain_bird_sprinkler_8": {
+    "conversation": true
+  },
+  "binary_sensor.motion_sensor_door_side_motion": {
+    "conversation": true
+  },
+  "binary_sensor.groundstorey_trisensor_motion": {
+    "conversation": true
+  },
+  "binary_sensor.kitchen_motion_sensor_motion": {
+    "conversation": true
+  },
+  "binary_sensor.front_door_door": {
+    "conversation": true
+  },
+  "binary_sensor.motion_sensor_corridor_kitchen_side_motion": {
+    "conversation": true
+  },
+  "binary_sensor.stair_motion_sensor_motion": {
+    "conversation": true
+  },
+  "binary_sensor.1st_storey_sensor_motion": {
+    "conversation": true
+  },
+  "binary_sensor.main_door_door": {
+    "conversation": true
+  },
+  "light.buttlers_cabinet_lights": {
+    "conversation": true
+  },
+  "light.left_pillar": {
+    "conversation": true
+  },
+  "light.triple_light_switch_2": {
+    "conversation": true
+  },
+  "light.upstairs_corridor": {
+    "conversation": true
+  },
+  "light.ikea_light_1": {
+    "conversation": true
+  },
+  "light.light_6": {
+    "conversation": true
+  },
+  "light.dining_light": {
+    "conversation": true
+  },
+  "light.bedroom_light1": {
+    "conversation": true
+  },
+  "light.corridor_lights": {
+    "conversation": true
+  },
+  "light.right_floodlight": {
+    "conversation": true
+  },
+  "light.porch_light": {
+    "conversation": true
+  },
+  "light.kitchen_1": {
+    "conversation": true
+  },
+  "light.kitchen_3": {
+    "conversation": true
+  },
+  "light.kitchen_2": {
+    "conversation": true
+  },
+  "light.living_area": {
+    "conversation": true
+  },
+  "media_player.tizen_os_tv": {
+    "conversation": true
+  },
+  "sensor.upstairs_zone_temperature": {
+    "conversation": true
+  },
+  "sensor.upstairs_zone_cooling_setpoint": {
+    "conversation": true
+  },
+  "sensor.motion_sensor_door_side_temperature": {
+    "conversation": true
+  },
+  "sensor.downstairs_zone_temperature": {
+    "conversation": true
+  },
+  "sensor.downstairs_zone_cooling_setpoint": {
+    "conversation": true
+  },
+  "sensor.groundstorey_trisensor_temperature": {
+    "conversation": true
+  },
+  "sensor.kitchen_motion_sensor_temperature": {
+    "conversation": true
+  },
+  "sensor.motion_sensor_corridor_kitchen_side_temperature": {
+    "conversation": true
+  },
+  "sensor.stair_motion_sensor_temperature": {
+    "conversation": true
+  },
+  "sensor.1st_storey_sensor_temperature": {
+    "conversation": true
+  },
+  "sensor.aircon_temperature": {
+    "conversation": true
+  },
+  "sensor.aircon_cooling_setpoint": {
+    "conversation": true
+  },
+  "sensor.main_door_temperature": {
+    "conversation": true
+  },
+  "switch.upstairs_zone": {
+    "conversation": true
+  },
+  "switch.toaster": {
+    "conversation": true
+  },
+  "switch.stair_lights": {
+    "conversation": true
+  },
+  "switch.benchtop_light_switch": {
+    "conversation": true
+  },
+  "switch.2plug_2": {
+    "conversation": true
+  },
+  "switch.downstairs_zone": {
+    "conversation": true
+  },
+  "switch.kitchen_lights": {
+    "conversation": true
+  },
+  "switch.grill_toaster": {
+    "conversation": true
+  },
+  "switch.stair_light_switch": {
+    "conversation": true
+  },
+  "switch.rear_flood_light": {
+    "conversation": true
+  },
+  "switch.rear_side_flood": {
+    "conversation": true
+  },
+  "switch.portico_light": {
+    "conversation": true
+  },
+  "switch.dishwasher_power": {
+    "conversation": true
+  },
+  "switch.dishwasher_child_lock": {
+    "conversation": true
+  },
+  "switch.dishwasher_silence_on_demand": {
+    "conversation": true
+  },
+  "binary_sensor.ep3x_bd7670488_motion": {
+    "conversation": true
+  },
+  "switch.ep3x_bd7670488_status_light": {
+    "conversation": true
+  },
+  "switch.ep3x_bd7670488_audio": {
+    "conversation": true
+  },
+  "switch.ep3x_bd7670488_tamper_alarm": {
+    "conversation": true
+  },
+  "switch.dishwasher_extra_dry": {
+    "conversation": true
+  },
+  "switch.dishwasher_hygiene": {
+    "conversation": true
+  },
+  "binary_sensor.front_door_door_2": {
+    "conversation": true
+  },
+  "binary_sensor.front_door_door_3": {
+    "conversation": true
+  },
+  "lock.front_door_4": {
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_feed_in": {
+    "cloud.alexa": true,
+    "cloud.google_assistant": true,
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_grid_consumption": {
+    "cloud.alexa": true,
+    "cloud.google_assistant": true,
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_battery_soc_1": {
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_battery_temp_1": {
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_bms_cell_temp_high_1": {
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_bms_cell_temp_low_1": {
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_battery_temp_2": {
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_bms_cell_temp_high_2": {
+    "conversation": true
+  },
+  "sensor.skynet_sun_harvester_bms_cell_temp_low_2": {
+    "conversation": true
+  },
+  "binary_sensor.white_python_user_present": {
+    "conversation": true
+  },
+  "button.white_python_honk_horn": {
+    "conversation": true
+  },
+  "climate.white_python_climate": {
+    "conversation": true
+  },
+  "cover.white_python_windows": {
+    "conversation": true
+  },
+  "cover.white_python_charge_port_door": {
+    "conversation": true
+  },
+  "cover.white_python_frunk": {
+    "conversation": true
+  },
+  "cover.white_python_trunk": {
+    "conversation": true
+  },
+  "device_tracker.white_python_location": {
+    "conversation": true
+  },
+  "device_tracker.white_python_route": {
+    "conversation": true
+  },
+  "media_player.white_python_media_player": {
+    "conversation": true
+  },
+  "sensor.white_python_battery_level": {
+    "conversation": true
+  },
+  "sensor.white_python_inside_temperature": {
+    "conversation": true
+  },
+  "sensor.white_python_outside_temperature": {
+    "conversation": true
+  },
+  "sensor.white_python_distance_to_arrival": {
+    "conversation": true
+  },
+  "sensor.white_python_time_to_full_charge": {
+    "conversation": true
+  },
+  "sensor.white_python_time_to_arrival": {
+    "conversation": true
+  },
+  "switch.white_python_sentry_mode": {
+    "conversation": true
+  },
+  "switch.white_python_auto_seat_climate_left": {
+    "conversation": true
+  },
+  "switch.white_python_auto_seat_climate_right": {
+    "conversation": true
+  },
+  "switch.white_python_auto_steering_wheel_heater": {
+    "conversation": true
+  },
+  "switch.white_python_defrost": {
+    "conversation": true
+  },
+  "switch.white_python_charge": {
+    "conversation": true
+  },
+  "script.amber_request_decision": {
+    "conversation": true
+  },
+  "script.amber_force_charge": {
+    "conversation": true
+  },
+  "script.amber_force_sell": {
+    "conversation": true
+  },
+  "script.amber_self_use": {
+    "conversation": true
+  },
+  "binary_sensor.amber_force_charge_active": {
+    "conversation": true
+  },
+  "automation.amber_periodic_llm_decision": {
+    "conversation": true
+  },
+  "automation.amber_spike_triggered_re_evaluation": {
+    "conversation": true
+  },
+  "automation.amber_execute_llm_decision": {
+    "conversation": true
+  },
+  "automation.amber_notify_decision_no_execute": {
+    "conversation": true
+  },
+  "automation.amber_stop_at_target_soc": {
+    "conversation": true
+  },
+  "automation.amber_solar_forecast_calibration": {
+    "conversation": true
+  },
+  "automation.amber_history_learner_p75": {
+    "conversation": true
+  },
+  "automation.amber_cost_basis_update": {
+    "conversation": true
+  },
+  "binary_sensor.amber_force_discharge_active": {
+    "conversation": true
+  },
+  "binary_sensor.amber_spike_imminent": {
+    "conversation": true
+  },
+  "binary_sensor.amber_decision_degraded": {
+    "conversation": true
+  },
+  "automation.amber_session_ceiling_timeout": {
+    "conversation": true
+  },
+  "automation.amber_abort_force_session_on_disable": {
+    "conversation": true
+  },
+  "automation.amber_required_entity_check": {
+    "conversation": true
+  },
+  "automation.hvac_amber_price_spike_pause": {
+    "conversation": true
+  },
+  "input_number.hvac_amber_price_pause_threshold": {
+    "conversation": true
+  },
+  "input_boolean.hvac_amber_pause_active": {
+    "conversation": true
+  },
+  "binary_sensor.charm_at_home": {
+    "conversation": true
+  },
+  "binary_sensor.hvac_any_motion_active": {
+    "conversation": true
+  },
+  "sensor.hvac_avg_downstairs_temp": {
+    "conversation": true
+  },
+  "sensor.hvac_avg_upstairs_temp": {
+    "conversation": true
+  },
+  "sensor.hvac_avg_all_zones_temp": {
+    "conversation": true
+  },
+  "sensor.hvac_outdoor_temp_normalised": {
+    "conversation": true
+  },
+  "sensor.hvac_outdoor_humidity": {
+    "conversation": true
+  },
+  "sensor.hvac_heat_index": {
+    "conversation": true
+  },
+  "sensor.hvac_heat_trigger_active": {
+    "conversation": true
+  },
+  "sensor.hvac_cool_trigger_active": {
+    "conversation": true
+  },
+  "sensor.hvac_coldest_zone_temp": {
+    "conversation": true
+  },
+  "sensor.hvac_hottest_zone_temp": {
+    "conversation": true
+  },
+  "automation.amber_degraded_decision_alert": {
+    "conversation": true
+  },
+  "sensor.hvac_amber_forecast_summary": {
+    "conversation": true
+  },
+  "sensor.hvac_amber_forecast_next_spike": {
+    "conversation": true
+  },
+  "sensor.hvac_amber_forecast_next_low": {
+    "conversation": true
+  },
+  "sensor.hvac_supply_temperature": {
+    "conversation": true
+  },
+  "sensor.hvac_amber_next_spike": {
+    "conversation": true
+  },
+  "sensor.hvac_amber_next_low": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_linedetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_fielddetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_regionentrance": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_regionexiting": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_io": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_tamperdetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_linedetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_fielddetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_regionentrance": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_regionexiting": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_scenechangedetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_io": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2p_lsu_sl20241202aawrft5979609_1_alarm_output": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2se4c425mwg_e_2620241014aawrfq9275913_1_linedetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2se4c425mwg_e_2620241014aawrfq9275913_1_fielddetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2se4c425mwg_e_2620241014aawrfq9275913_1_regionentrance": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2se4c425mwg_e_2620241014aawrfq9275913_1_regionexiting": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2se4c425mwg_e_2620241014aawrfq9275913_2_fielddetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2se4c425mwg_e_2620241014aawrfq9275913_2_linedetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2se4c425mwg_e_2620241014aawrfq9275913_2_regionentrance": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2se4c425mwg_e_2620241014aawrfq9275913_2_regionexiting": {
+    "conversation": true
+  },
+  "switch.ds_2se4c425mwg_e_2620241014aawrfq9275913_1_tamperdetection": {
+    "conversation": true
+  },
+  "switch.ds_2se4c425mwg_e_2620241014aawrfq9275913_1_linedetection": {
+    "conversation": true
+  },
+  "switch.ds_2se4c425mwg_e_2620241014aawrfq9275913_1_fielddetection": {
+    "conversation": true
+  },
+  "switch.ds_2se4c425mwg_e_2620241014aawrfq9275913_1_regionentrance": {
+    "conversation": true
+  },
+  "switch.ds_2se4c425mwg_e_2620241014aawrfq9275913_1_regionexiting": {
+    "conversation": true
+  },
+  "switch.ds_2se4c425mwg_e_2620241014aawrfq9275913_2_fielddetection": {
+    "conversation": true
+  },
+  "switch.ds_2se4c425mwg_e_2620241014aawrfq9275913_2_linedetection": {
+    "conversation": true
+  },
+  "switch.ds_2se4c425mwg_e_2620241014aawrfq9275913_2_regionentrance": {
+    "conversation": true
+  },
+  "switch.ds_2se4c425mwg_e_2620241014aawrfq9275913_2_regionexiting": {
+    "conversation": true
+  },
+  "switch.ds_2se4c425mwg_e_2620241014aawrfq9275913_1_alarm_output": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_motiondetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_linedetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_fielddetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_regionentrance": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_regionexiting": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_io": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_motiondetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_tamperdetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_linedetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_fielddetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_regionentrance": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_regionexiting": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_scenechangedetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_io": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375399_1_alarm_output": {
+    "conversation": true
+  },
+  "binary_sensor.20210520aawrg04798631_1_motiondetection": {
+    "conversation": true
+  },
+  "binary_sensor.20210520aawrg04798631_1_linedetection": {
+    "conversation": true
+  },
+  "binary_sensor.20210520aawrg04798631_1_fielddetection": {
+    "conversation": true
+  },
+  "binary_sensor.20210520aawrg04798631_1_regionentrance": {
+    "conversation": true
+  },
+  "binary_sensor.20210520aawrg04798631_1_regionexiting": {
+    "conversation": true
+  },
+  "switch.20210520aawrg04798631_1_motiondetection": {
+    "conversation": true
+  },
+  "switch.20210520aawrg04798631_1_tamperdetection": {
+    "conversation": true
+  },
+  "switch.20210520aawrg04798631_1_linedetection": {
+    "conversation": true
+  },
+  "switch.20210520aawrg04798631_1_fielddetection": {
+    "conversation": true
+  },
+  "switch.20210520aawrg04798631_1_regionentrance": {
+    "conversation": true
+  },
+  "switch.20210520aawrg04798631_1_regionexiting": {
+    "conversation": true
+  },
+  "switch.20210520aawrg04798631_1_scenechangedetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_motiondetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_linedetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_fielddetection": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_regionentrance": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_regionexiting": {
+    "conversation": true
+  },
+  "binary_sensor.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_io": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_motiondetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_tamperdetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_linedetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_fielddetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_regionentrance": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_regionexiting": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_scenechangedetection": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_io": {
+    "conversation": true
+  },
+  "switch.ds_2cd2387g2h_lisu_sl20241116aawrfs7375402_1_alarm_output": {
+    "conversation": true
+  },
+  "sensor.skynet_nas": {
+    "cloud.alexa": true,
+    "cloud.google_assistant": true,
+    "conversation": true
+  },
+  "media_player.plex_plex_for_android_tv_shield_android_tv": {
+    "conversation": true
+  },
+  "media_player.plex_plex_for_android_tv_bravia_4k_2015": {
+    "conversation": true
+  },
+  "media_player.plex_plex_for_apple_tv_apple_tv": {
+    "conversation": true
+  },
+  "sensor.home_charm_temp": {
+    "conversation": true
+  },
+  "sensor.home_charm_temp_feels_like": {
+    "conversation": true
+  },
+  "sensor.home_charm_max_temp": {
+    "conversation": true
+  },
+  "sensor.home_charm_min_temp": {
+    "conversation": true
+  },
+  "sensor.home_charm_humidity": {
+    "conversation": true
+  },
+  "sensor.home_charm_dew_point": {
+    "conversation": true
+  },
+  "sensor.clyde_north_temp_max_0": {
+    "conversation": true
+  },
+  "sensor.clyde_north_temp_min_0": {
+    "conversation": true
+  },
+  "sensor.clyde_north_now_temp_now": {
+    "conversation": true
+  },
+  "sensor.clyde_north_now_temp_later": {
+    "conversation": true
+  },
+  "sensor.amber_price_timeline": {
+    "conversation": true
+  },
+  "sensor.amber_feed_in_timeline": {
+    "conversation": true
+  },
+  "sensor.amber_live_prices": {
+    "conversation": true
+  },
+  "automation.amber_handle_mobile_fallback_decision": {
+    "conversation": true
+  },
+  "media_player.plex_infuse_library_apple_tv": {
+    "conversation": true
+  },
+  "automation.amber_solar_forecast_calibration_2": {
+    "conversation": true
+  },
+  "automation.amber_solar_forecast_calibration_3": {
+    "conversation": true
+  },
+  "sensor.daily_grid_import_energy": {
+    "conversation": true
+  },
+  "media_player.charms_mac_mini": {
+    "conversation": true
+  },
+  "media_player.kdl_55w800c_2": {
+    "conversation": true
+  },
+  "media_player.shield_2": {
+    "conversation": true
+  },
+  "media_player.shield_3": {
+    "conversation": true
+  },
+  "media_player.kdl_55w800c_3": {
+    "conversation": true
+  },
+  "media_player.kdl_55w800c_4": {
+    "conversation": true
+  },
+  "media_player.home_theater_3": {
+    "conversation": true
+  },
+  "media_player.entertainment_room": {
+    "conversation": true
+  },
+  "sensor.hvac_zone_downstairs_temp_cold": {
+    "conversation": true
+  },
+  "sensor.hvac_zone_downstairs_temp_hot": {
+    "conversation": true
+  },
+  "sensor.hvac_zone_upstairs_temp_cold": {
+    "conversation": true
+  },
+  "sensor.hvac_zone_upstairs_temp_hot": {
+    "conversation": true
+  },
+  "light.wiz_tunable_white_402a9c": {
+    "conversation": true
+  },
+  "light.wiz_tunable_white_3fbedc": {
+    "conversation": true
+  },
+  "light.wiz_tunable_white_3219a8": {
+    "conversation": true
+  },
+  "light.wiz_rgbww_tunable_ceba6b": {
+    "conversation": true
+  },
+  "sensor.aqara_climate_sensor_w100_humidity": {
+    "conversation": true
+  },
+  "sensor.aqara_climate_sensor_w100_temperature": {
+    "conversation": true
+  },
+  "sensor.60hd15305b3m173_bat_temperature": {
+    "conversation": true
+  },
+  "sensor.60hd15305b3m173_ambient_temperature": {
+    "conversation": true
+  },
+  "sensor.60hd15305b3m173_inv_temperature": {
+    "conversation": true
+  },
+  "sensor.60hd15305b3m173_boost_temperature": {
+    "conversation": true
+  },
+  "sensor.60hd15305b3m173_charge_temperature": {
+    "conversation": true
+  },
+  "sensor.60hd15305b3m173_dsp_temperature": {
+    "conversation": true
+  },
+  "light.wiz_tunable_white_3f7dd4": {
+    "conversation": true
+  },
+  "light.wiz_rgbw_tunable_a493c0": {
+    "conversation": true
+  },
+  "light.wiz_rgbw_tunable_a4ac48": {
+    "conversation": true
+  },
+  "binary_sensor.cam_63_ptz_motion": {
+    "conversation": true
+  },
+  "binary_sensor.cam_60_motion": {
+    "conversation": true
+  },
+  "binary_sensor.cam_68_motion": {
+    "conversation": true
+  },
+  "binary_sensor.cam_64_motion": {
+    "conversation": true
+  },
+  "binary_sensor.cam_62_motion": {
+    "conversation": true
+  },
+  "binary_sensor.cam_63_pano_motion": {
+    "conversation": true
+  },
+  "light.a_e27_2": {
+    "conversation": true
+  }
+}

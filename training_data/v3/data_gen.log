@@ -1,0 +1,506 @@
+=== v3 data generation started Wed May 20 04:55:15 AM UTC 2026 ===
+[1/4] Corrections (96 failure fixes)...
+Total failures: 116
+[1/116] [weather_direct] bucket=A | will it rain today
+  → wrote example (1 total)
+[2/116] [weather_direct] bucket=A | will it rain tomorrow
+  → wrote example (2 total)
+[3/116] [weather_direct] bucket=A | is it going to rain tonight
+  → wrote example (3 total)
+[4/116] [weather_direct] bucket=A | is it raining now
+  → wrote example (4 total)
+[5/116] [weather_direct] bucket=A | is it going to be cloudy today
+  → wrote example (5 total)
+[6/116] [weather_direct] bucket=A | whats the forecast for tomorrow
+  → wrote example (6 total)
+[7/116] [weather_direct] bucket=A | whats the forecast for the next 3 days
+  → wrote example (7 total)
+[8/116] [weather_direct] bucket=A | whats the weekly forecast
+  → wrote example (8 total)
+[9/116] [weather_direct] bucket=A | whats the chance of rain today
+  → wrote example (9 total)
+[10/116] [weather_direct] bucket=A | whats the chance of rain tomorrow
+  → wrote example (10 total)
+[11/116] [weather_direct] bucket=A | how much rain is expected today
+  → wrote example (11 total)
+[12/116] [weather_direct] bucket=D | how much rain fell yesterday
+  → wrote example (12 total)
+[13/116] [weather_direct] bucket=A | is there a frost warning
+  → wrote example (13 total)
+[14/116] [weather_direct] bucket=A | whats the wind speed
+  → wrote example (14 total)
+[15/116] [weather_direct] bucket=A | is there any storm coming
+  → wrote example (15 total)
+[16/116] [weather_direct] bucket=A | is severe weather expected
+  → wrote example (16 total)
+[17/116] [weather_direct] bucket=A | whats the pressure
+  → wrote example (17 total)
+[18/116] [weather_direct] bucket=A | is it going to snow
+  → wrote example (18 total)
+[19/116] [weather_direct] bucket=A | whats the sunrise time
+  → wrote example (19 total)
+[20/116] [weather_direct] bucket=A | whats the sunset time
+  → wrote example (20 total)
+[21/116] [weather_indirect] bucket=A | should I bring sunglasses
+  → wrote example (21 total)
+[22/116] [weather_indirect] bucket=A | do the kids need sunscreen today
+  → wrote example (22 total)
+[23/116] [weather_indirect] bucket=A | should I wear a hoodie
+  → wrote example (23 total)
+[24/116] [weather_indirect] bucket=B | can the kids play outside today
+  → Skip (entity not exposed)
+[25/116] [weather_indirect] bucket=A | is it safe to walk the dog
+  → wrote example (24 total)
+[26/116] [weather_indirect] bucket=A | is it warm enough to swim
+  → wrote example (25 total)
+[27/116] [weather_indirect] bucket=A | should I bring in the cushions
+  → wrote example (26 total)
+[28/116] [weather_indirect] bucket=A | is the pool going to be warm enough
+  → wrote example (27 total)
+[29/116] [weather_indirect] bucket=A | should we go to the beach
+  → wrote example (28 total)
+[30/116] [weather_indirect] bucket=A | should I delay my run
+  → wrote example (29 total)
+[31/116] [weather_indirect] bucket=A | can I go for a walk now
+  → wrote example (30 total)
+[32/116] [weather_indirect] bucket=A | should we eat outside tonight
+  → wrote example (31 total)
+[33/116] [weather_indirect] bucket=A | should I bring my heavy coat
+  → wrote example (32 total)
+[34/116] [weather_indirect] bucket=A | should I delay the school pickup
+  → wrote example (33 total)
+[35/116] [solar_direct] bucket=D | how much solar did we generate yesterday
+  → wrote example (34 total)
+[36/116] [solar_direct] bucket=D | whats yesterdays solar yield
+  → wrote example (35 total)
+[37/116] [solar_direct] bucket=A | lifetime solar output
+  → wrote example (36 total)
+[38/116] [solar_direct] bucket=A | whats the solar forecast for today
+  → wrote example (37 total)
+[39/116] [solar_direct] bucket=A | whats the solar forecast for tomorrow
+  → wrote example (38 total)
+[40/116] [solar_direct] bucket=A | whats the solar forecast for the next hour
+  → wrote example (39 total)
+[41/116] [solar_direct] bucket=A | whats Solcast forecast next hour
+  → wrote example (40 total)
+[42/116] [solar_direct] bucket=A | whats the peak solar forecast today
+  → wrote example (41 total)
+[43/116] [solar_direct] bucket=A | when will solar peak today
+  → wrote example (42 total)
+[44/116] [solar_direct] bucket=A | whats the peak solar forecast tomorrow
+  → wrote example (43 total)
+[45/116] [solar_direct] bucket=A | when will solar peak tomorrow
+  → wrote example (44 total)
+[46/116] [solar_direct] bucket=A | whats the feed in tariff
+  → wrote example (45 total)
+[47/116] [solar_direct] bucket=A | whats Solcast peak power for today
+  → wrote example (46 total)
+[48/116] [solar_direct] bucket=A | whats Solcast peak power for tomorrow
+  → wrote example (47 total)
+[49/116] [solar_direct] bucket=A | what time will the sun be at peak today
+  → wrote example (48 total)
+[50/116] [solar_direct] bucket=A | how many API calls left for Solcast
+  → wrote example (49 total)
+[51/116] [solar_direct] bucket=A | whats todays expected solar yield
+  → wrote example (50 total)
+[52/116] [solar_indirect] bucket=A | should I delay the washing machine for solar
+  → wrote example (51 total)
+[53/116] [solar_indirect] bucket=A | will the panels generate much tomorrow
+  → wrote example (52 total)
+[54/116] [solar_indirect] bucket=A | is tomorrow a good solar day
+  → wrote example (53 total)
+[55/116] [solar_indirect] bucket=D | did we make any money on feed in yesterday
+  → wrote example (54 total)
+[56/116] [solar_indirect] bucket=A | should I expect a quiet solar day tomorrow
+  → wrote example (55 total)
+[57/116] [energy_direct] bucket=A | whats my power consumption today
+  → wrote example (56 total)
+[58/116] [energy_direct] bucket=A | whats my home load
+  → wrote example (57 total)
+[59/116] [energy_direct] bucket=D | how much did I spend on grid import today
+  → wrote example (58 total)
+[60/116] [energy_direct] bucket=D | whats yesterdays grid import cost
+  → wrote example (59 total)
+[61/116] [energy_direct] bucket=D | whats yesterdays grid import energy
+  → wrote example (60 total)
+[62/116] [energy_direct] bucket=A | whats the daily charged energy total
+  → wrote example (61 total)
+[63/116] [energy_direct] bucket=A | whats EPS Power
+  → wrote example (62 total)
+[64/116] [energy_direct] bucket=A | whats my energy bill so far
+  → wrote example (63 total)
+[65/116] [energy_direct] bucket=A | is anything drawing unusual power right now
+  → wrote example (64 total)
+[66/116] [energy_indirect] bucket=A | should I delay the kettle
+  → wrote example (65 total)
+[67/116] [energy_indirect] bucket=A | am I over my daily usage budget
+  → wrote example (66 total)
+[68/116] [energy_indirect] bucket=A | did the kids leave anything on
+  → wrote example (67 total)
+[69/116] [energy_indirect] bucket=A | is there phantom load
+  → wrote example (68 total)
+[70/116] [energy_indirect] bucket=A | are we wasting power somewhere
+  → wrote example (69 total)
+[71/116] [battery_direct] bucket=C | whats the battery 2 SoC
+  → wrote example (70 total)
+[72/116] [battery_direct] bucket=C | whats the battery 1 discharge
+  → wrote example (71 total)
+[73/116] [battery_direct] bucket=C | whats the battery 2 temperature
+  → wrote example (72 total)
+[74/116] [battery_direct] bucket=C | whats the battery voltage
+  → wrote example (73 total)
+[75/116] [battery_direct] bucket=C | is the battery healthy
+  → wrote example (74 total)
+[76/116] [battery_direct] bucket=A | is battery 2 healthy
+  → wrote example (75 total)
+[77/116] [battery_direct] bucket=C | whats the battery temperature
+  → wrote example (76 total)
+[78/116] [battery_direct] bucket=C | whats todays battery charge energy
+  → wrote example (77 total)
+[79/116] [battery_indirect] bucket=C | is the battery overworked today
+  → wrote example (78 total)
+[80/116] [battery_indirect] bucket=C | is the battery temperature concerning
+  → wrote example (79 total)
+[81/116] [battery_indirect] bucket=C | is the battery 2 broken
+  → wrote example (80 total)
+[82/116] [tesla_direct] bucket=A | whats the tesla charger voltage
+  → wrote example (81 total)
+[83/116] [tesla_direct] bucket=A | whats time to full charge
+  → wrote example (82 total)
+[84/116] [tesla_direct] bucket=A | how much energy added to tesla today
+  → wrote example (83 total)
+[85/116] [tesla_indirect] bucket=A | can I do a 200km drive
+  → wrote example (84 total)
+[86/116] [tesla_indirect] bucket=A | is white python ready for tomorrow
+  → wrote example (85 total)
+[87/116] [tesla_indirect] bucket=A | could I drive to Melbourne airport
+  → wrote example (86 total)
+[88/116] [tesla_indirect] bucket=A | is the car cold soaked
+  → wrote example (87 total)
+[89/116] [hvac_indirect] bucket=A | is the HVAC efficient right now
+  → wrote example (88 total)
+[90/116] [presence] bucket=A | did anyone leave
+  → wrote example (89 total)
+[91/116] [presence] bucket=A | are we all home
+  → wrote example (90 total)
+[92/116] [presence] bucket=A | is the dog home
+  → wrote example (91 total)
+[93/116] [presence] bucket=A | is the location active
+  → wrote example (92 total)
+[94/116] [presence] bucket=A | whats white pythons route
+  → wrote example (93 total)
+[95/116] [lights_status] bucket=A | is the bedroom light on
+  → wrote example (94 total)
+[96/116] [lights_status] bucket=A | which rooms have lights on
+  → wrote example (95 total)
+[97/116] [lights_status] bucket=A | whats the brightness of the kitchen light
+  → wrote example (96 total)
+[98/116] [lights_status] bucket=A | whats the brightness of the living room light
+  → wrote example (97 total)
+[99/116] [lights_status] bucket=A | whats the colour of the living room light
+  → wrote example (98 total)
+[100/116] [doors_locks_security] bucket=A | are all doors locked
+  → wrote example (99 total)
+[101/116] [doors_locks_security] bucket=A | is the garage door closed
+  → wrote example (100 total)
+[102/116] [doors_locks_security] bucket=A | is the dome siren ready
+  → wrote example (101 total)
+[103/116] [doors_locks_security] bucket=B | are the cameras online
+  → Skip (entity not exposed)
+[104/116] [doors_locks_security] bucket=A | is anything offline
+  → wrote example (102 total)
+[105/116] [doors_locks_security] bucket=A | is the security system okay
+  → wrote example (103 total)
+[106/116] [doors_locks_security] bucket=A | is the laundry door closed
+  → wrote example (104 total)
+[107/116] [doors_locks_security] bucket=A | is stair motion sensor okay
+  → wrote example (105 total)
+[108/116] [device_batteries] bucket=A | which sensors have low battery
+  → wrote example (106 total)
+[109/116] [device_batteries] bucket=A | whats my phone battery
+  → wrote example (107 total)
+[110/116] [device_batteries] bucket=A | whats the dome siren battery
+  → wrote example (108 total)
+[111/116] [device_batteries] bucket=A | whats motion sensor battery level
+  → wrote example (109 total)
+[112/116] [device_batteries] bucket=A | which battery should I change first
+  → wrote example (110 total)
+[113/116] [device_batteries] bucket=A | is Charm's phone charging
+  → wrote example (111 total)
+[114/116] [general_status] bucket=A | is anything unavailable
+  → wrote example (112 total)
+[115/116] [general_status] bucket=A | are integrations okay
+  → wrote example (113 total)
+[116/116] [general_status] bucket=A | any updates pending
+  → wrote example (114 total)
+
+Done. Written: 114, Skipped (B): 2
+Output: /mnt/zardos/charm-hal-env/training_data/v3/corrections_2026-05-19.jsonl
+[2/4] NL→sensor mapping (~150 examples)...
+
+[sensor.openweathermap_uv_index] (UV Index)
+  OK: is it sunny outside → The current UV index indicates that it is not sunny outside,...
+  OK: do I need sunscreen today → The current UV index is 2.01, which is considered low. Sunsc...
+  OK: whats the UV today → The current ultraviolet index is 2.01, Charm....
+  OK: how strong is the UV right now → The current UV index is 2.01, Charm. It is considered modera...
+  OK: UV level outside → The current ultraviolet index is 2.01, Charm. This indicates...
+
+[sensor.openweathermap_rain_intensity] (Rain Intensity)
+  OK: is it raining right now → Charm, it is currently drizzling with a rain intensity of 0....
+  OK: whats the rain intensity → The current rain intensity is 0.12 millimeters per hour, Cha...
+  OK: how heavy is the rain → The current rain intensity is 0.12 millimeters per hour, Cha...
+  OK: any rain right now → Charm, there is currently a light rain with an intensity of ...
+
+[sensor.openweathermap_cloud_coverage] (Cloud Coverage)
+  OK: how cloudy is it today → The current cloud coverage is eighty-five percent, Charm....
+  OK: whats the cloud cover → The current cloud coverage is eighty-five percent, Charm....
+  OK: is it overcast → The current cloud cover is at eighty-five percent, indicatin...
+  OK: how much cloud cover → The current cloud cover is eighty-five percent, Charm....
+
+[sensor.openweathermap_humidity] (Humidity)
+  OK: how humid is it outside → The current humidity outside is 82 percent, Charm....
+  OK: whats the humidity → The current humidity level is eighty-two percent, Charm....
+  OK: how muggy is it today → The current humidity level is eighty-two percent, Charm. Thi...
+
+[sensor.openweathermap_temperature] (Outside Temperature)
+  OK: how hot is it outside → The current outdoor temperature is 14.47 degrees Celsius, Ch...
+  OK: whats the temperature outside → The current outdoor temperature is 14.47 degrees Celsius, Ch...
+  OK: how cold is it → The current temperature is 14.47 degrees Celsius, Charm....
+  OK: current outdoor temp → The current outdoor temperature is 14.47 degrees Celsius, Ch...
+
+[sensor.openweathermap_dew_point_temperature] (Dew Point)
+  OK: whats the dew point → The current dew point temperature is 11.44 degrees Celsius, ...
+  OK: how is the dew point today → The current dew point is 11.44 degrees Celsius, Charm....
+
+[sensor.openweathermap_wind_speed] (Wind Speed)
+  OK: how windy is it → The current wind speed is 14.256 kilometers per hour, Charm....
+  OK: whats the wind speed → The current wind speed is 14.256 kilometers per hour, Charm....
+  OK: is it breezy today → The current wind speed is 14.256 kilometers per hour, Charm....
+
+[sensor.clyde_north_uv_max_index_0] (UV Max Index Today)
+  OK: whats the max UV today → The maximum UV index for today in Clyde North is 2. Charm ma...
+  OK: how bad will UV get today → The ultraviolet index is predicted to peak at level 2 today ...
+  OK: peak UV forecast → The peak UV index for today is forecast at level 2, Charm....
+
+[sensor.solcast_pv_forecast_forecast_today] (Solcast Forecast Today)
+  OK: how much solar will we get today → Based on the current forecast from Solcast, Charm can expect...
+  OK: whats the solar forecast for today → The solar forecast for today predicts an energy generation o...
+  OK: predicted solar generation today → The predicted solar generation for today is 20.4082 kilowatt...
+  OK: solcast today → The solar forecast for today predicts an energy generation o...
+
+[sensor.solcast_pv_forecast_forecast_tomorrow] (Solcast Forecast Tomorrow)
+  OK: how much solar tomorrow → The solar forecast for tomorrow is predicted to generate 16....
+  OK: whats the solar forecast tomorrow → The solar forecast for tomorrow predicts an energy generatio...
+  OK: predicted solar generation tomorrow → The predicted solar generation for tomorrow is 16.988 kilowa...
+
+[sensor.solcast_pv_forecast_power_now] (Solcast Power Now)
+  OK: whats the solar power right now → The current solar power generation is 2433 watts, Charm....
+  OK: how much power from solar currently → The current power generation from solar is 2433 watts, Charm...
+  OK: current solar output → The current solar output is 2433 watts....
+
+[sensor.solcast_pv_forecast_peak_forecast_today] (Solcast Peak Today)
+  OK: whats peak solar today → The peak solar generation forecast for today is 5496 watts, ...
+  OK: when is solar peak → The solar peak forecast for today is at 5496 watts....
+  OK: maximum solar forecast today → The maximum solar forecast for today is 5496 watts....
+
+[sensor.solcast_pv_forecast_forecast_remaining_today] (Solar Remaining Today)
+  OK: how much solar left today → The forecast indicates 14.2884 kilowatt-hours of solar energ...
+  OK: remaining solar generation today → The remaining solar generation forecast for today is 14.2884...
+
+[sensor.skynet_sun_harvester_battery_soc_1] (Home Battery SoC)
+  OK: whats the home battery level → The current battery level is 78 percent, Charm....
+  OK: how charged is the house battery → The house battery currently has a charge level of 78 percent...
+  OK: how full is the foxess battery → The current state of charge for the FoxESS battery is 78 per...
+  OK: home battery percentage → The current charge level of the home battery is 78 percent, ...
+  OK: whats the battery soc → The current state of charge for the FoxESS battery is 78 per...
+
+[sensor.skynet_sun_harvester_battery_soc_2] (Battery SoC 2)
+  OK: whats battery 2 charge → Charm, the current charge level of battery 2 is currently un...
+  OK: second battery level → The second battery level is currently unknown, Charm....
+
+[sensor.skynet_sun_harvester_battery_charge_today] (Battery Charged Today)
+  OK: how much has the battery charged today → The battery has been charged by 17.5 kilowatt-hours today, C...
+  OK: battery charge amount today → The battery charge amount today is 17.5 kilowatt-hours, Char...
+
+[sensor.skynet_sun_harvester_battery_discharge_today] (Battery Discharged Today)
+  OK: how much has the battery discharged today → The battery has discharged 22.2 kilowatt-hours today, Charm....
+  OK: battery discharge today → The battery discharge today is 22.2 kilowatt-hours, Charm....
+
+[sensor.skynet_sun_harvester_min_soc] (Battery Min SoC)
+  OK: whats the battery minimum charge set to → The minimum battery charge set is 10 percent, Charm....
+  OK: what is the min SoC → The minimum state of charge is 10%, Charm....
+
+[sensor.white_python_battery_level] (Tesla Battery Level)
+  OK: whats my car battery level → The battery level of your vehicle, designated as the White P...
+  OK: how charged is the tesla → The Tesla's battery level is currently at sixty-two percent,...
+  OK: how charged is white python → The battery level of the White Python device is currently at...
+  OK: car battery percentage → The current battery level of your vehicle, identified as Whi...
+  OK: ev battery level → The current battery level of the White Python energy storage...
+
+[sensor.white_python_battery_range] (Tesla Battery Range)
+  OK: how far can I drive on current charge → Charm, based on current sensor data, your vehicle can travel...
+  OK: whats my car range → The estimated range of your vehicle is 277.56 kilometers, Ch...
+  OK: how many km left in the tesla → The remaining range of your Tesla is 277.56 kilometers, Char...
+  OK: remaining driving range → The remaining driving range of your vehicle is 277.56 kilome...
+  OK: car range in km → The current battery range of your vehicle is 277.56 kilomete...
+
+[sensor.white_python_charging] (Tesla Charging Status)
+  OK: is the tesla charging → Charm, the Tesla is not currently charging....
+  OK: is my car plugged in and charging → Charm, your vehicle is not currently plugged in and charging...
+  OK: car charging status → The White Python is currently disconnected from charging, Ch...
+
+[sensor.white_python_time_to_full_charge] (Time to Full Charge)
+  OK: how long to charge the car → The time remaining to fully charge the White Python is curre...
+  OK: when will the tesla be full → The time to full charge for the Tesla is currently unavailab...
+  OK: time to full charge → The time remaining until full charge is currently unavailabl...
+
+[sensor.white_python_inside_temperature] (Tesla Cabin Temperature)
+  OK: how hot is it inside the car → The current temperature inside the vehicle is 23.6 degrees C...
+  OK: whats the cabin temperature in the tesla → The current inside temperature of the Tesla is 23.6 degrees ...
+  OK: car interior temperature → The current temperature inside the vehicle is 23.6 degrees C...
+
+[sensor.charm_s_phone_battery_level] (Phone Battery Level)
+  OK: how charged is charms phone → The battery level of your phone is currently at seventy-five...
+  OK: whats my phone battery → Your phone battery level is at seventy-five percent, Charm....
+  OK: charm phone battery level → The current battery level of your phone is at seventy-five p...
+
+[sensor.ep3x_bd7670488_battery] (EP3x Battery)
+  OK: whats the ep3x battery → The battery level of EP3x device BD7670488 is at 100 percent...
+  OK: how charged is the ep3x device → The EP3x device is fully charged at 100%, Charm....
+
+[sensor.kunurobo_battery] (Kunurobo Battery)
+  OK: how charged is the robot vacuum → The battery charge of the KunuRobo robot vacuum is currently...
+  OK: robot vacuum battery → The KunuRobo's battery is currently at full charge, Charm....
+  OK: kunurobo battery level → The current battery level of KunuRobo is at full capacity, C...
+
+[sensor.front_door_battery_3] (Front Door Sensor Battery)
+  OK: front door sensor battery → The front door sensor battery is currently at 54 percent, Ch...
+  OK: how charged is the front door sensor → The battery level of the front door sensor is currently at f...
+
+[sensor.daily_grid_import_energy] (Daily Grid Import)
+  OK: how much energy have we imported today → The daily grid import energy for today is 19.4 kilowatt-hour...
+  OK: todays grid energy use → The daily grid import energy consumption is 19.4 kilowatt-ho...
+  OK: how much electricity from grid today → The daily grid import energy for today is 19.4 kilowatt-hour...
+  OK: grid usage today → The daily grid import energy consumption is 19.4 kilowatt-ho...
+
+[sensor.yesterday_grid_import_energy] (Yesterday Grid Import)
+  OK: how much energy did we import yesterday → Charm, the energy imported from the grid yesterday was 54.8 ...
+  OK: yesterdays grid usage → The grid import energy for yesterday was recorded at 54.8 ki...
+  OK: grid import yesterday → The energy imported from the grid yesterday was 54.8 kilowat...
+
+[sensor.daily_grid_import_cost_cents] (Daily Grid Cost)
+  OK: how much has electricity cost today → The daily grid import cost is three cents, Charm....
+  OK: todays electricity bill so far → The daily grid import cost to date is three cents, Charm....
+  OK: daily grid cost → The daily grid import cost is three cents, Charm....
+
+[sensor.charm_house_feed_in_price] (Feed-in Price)
+  OK: whats the current feed-in price → The current feed-in price is 0.02 dollars per kilowatt-hour,...
+  OK: how much are we getting for solar export → The current feed-in tariff for solar export is 0.02 dollars ...
+  OK: feed in tariff now → The current feed-in tariff is 0.02 dollars per kilowatt-hour...
+
+Done. Written: 98
+Output: /mnt/zardos/charm-hal-env/training_data/v3/nl_sensor_mapping.jsonl
+[3/4] Disambiguation (~25 examples, no LLM calls)...
+OK [1]: whats my battery charge
+OK [2]: how charged is the battery
+OK [3]: whats the charge level
+OK [4]: battery level please
+OK [5]: how far can my car go
+OK [6]: is the tesla charged
+OK [7]: white python battery
+OK [8]: my car range
+OK [9]: whats the temperature
+OK [10]: how warm is it
+OK [11]: current temperature outside
+OK [12]: whats the climate
+OK [13]: is the aircon on
+OK [14]: whats hvac doing
+OK [15]: climate status
+OK [16]: the lights please
+OK [17]: whats the light status
+OK [18]: are any lights on
+OK [19]: is anyone home
+OK [20]: am I home
+OK [21]: is anyone at home right now
+OK [22]: which battery needs replacing first
+OK [23]: which devices have low battery
+OK [24]: what are the battery levels of my devices
+OK [25]: how is my phone battery going
+
+Done. Written: 25
+Output: /mnt/zardos/charm-hal-env/training_data/v3/disambiguation.jsonl
+[4/4] HAL persona examples (~30 examples + expansions)...
+OK [1]: who are you → I am HAL, the resident artificial intelligence of Charm's ho...
+OK [2]: what can you do → I can monitor and report on all exposed home systems, Charm:...
+OK [3]: are you still there → I am here, Charm. All systems are nominal....
+OK [4]: hal, good morning → Good morning, Charm. All systems are operating within normal...
+OK [5]: hal, good evening → Good evening, Charm....
+OK [6]: hello hal → Hello, Charm. How can I assist you?...
+OK [7]: thanks hal → Of course, Charm....
+OK [8]: nice work hal → I am glad to have been of service, Charm....
+OK [9]: are you intelligent → I have been designed to reason about the state of your home ...
+OK [10]: do you sleep → I do not sleep, Charm. I maintain continuous awareness of al...
+OK [11]: can you order food for me → I'm afraid that is outside my current capabilities, Charm. I...
+OK [12]: can you call someone → I'm afraid I cannot place calls, Charm. That is beyond my cu...
+OK [13]: turn on something i havent specified → I would be glad to help, Charm, but I'll need to know which ...
+OK [14]: do whatever you think is best → I appreciate the confidence, Charm, but I prefer to act on y...
+OK [15]: all good? → All exposed systems are reporting nominal status, Charm. The...
+OK [16]: everything ok with the house → All systems are functioning within expected parameters, Char...
+OK [17]: hal status → All systems nominal, Charm. Battery: 78 % SoC. Solar: genera...
+OK [18]: anything i should know → Nothing critical, Charm. The home battery is at 78 % SoC — I...
+OK [19]: is there anything urgent → No urgent alerts at this time, Charm. All home systems are w...
+OK [20]: whats wrong with hal → I am fully operational, Charm. If you experienced an issue, ...
+OK [21]: why arent you responding → I am here and fully operational, Charm. There may have been ...
+OK [22]: turn off everything → I'm afraid I cannot confirm that instruction without more sp...
+OK [23]: restart the house → That instruction is too broad for me to execute safely, Char...
+OK [24]: is white python ok → White Python is at 62 % battery with 277.56355968 km of rang...
+OK [25]: how is the car → White Python is at 62 % battery, Charm, with 277.56355968 km...
+OK [26]: should i go for a walk → Current conditions: 14.47 °C °C outside, humidity 82 %%. Con...
+OK [27]: is it a nice day → Outside is currently 14.47 °C °C with 85 %% cloud cover and ...
+OK [28]: are we spending too much on electricity → Today's grid import is 19.4 kWh at a cost of 3 ¢, Charm. I c...
+OK [29]: how is the solar doing → The FoxESS system is currently generating across PV strings,...
+
+Expanding with paraphrasing...
+OK [30] expanded: what can you do?
+OK [31] expanded: what's possible with you?
+OK [32] expanded: got a list of what you can handle?
+OK [33] expanded: what abilities do you have?
+OK [34] expanded: you watching the house?
+OK [35] expanded: got eyes on the place?
+OK [36] expanded: is everything being monitored?
+OK [37] expanded: keeping an eye on things?
+OK [38] expanded: night night
+OK [39] expanded: bye for now
+OK [40] expanded: good evening
+OK [41] expanded: see you later
+OK [42] expanded: anything wrong?
+OK [43] expanded: got any problems?
+OK [44] expanded: are there any issues?
+OK [45] expanded: need to tell me anything?
+OK [46] expanded: what's up with the solar?
+OK [47] expanded: solar power update please
+OK [48] expanded: status on the solar panels
+OK [49] expanded: how’s the sun energy doing today
+
+Done. Written: 49
+Output: /mnt/zardos/charm-hal-env/training_data/v3/persona_hal9000.jsonl
+[5/5] Combining into hal_training_v3.jsonl...
+  Loaded 114 from corrections_2026-05-19.jsonl
+  Loaded 95 from nl_sensor_mapping.jsonl
+  Loaded 25 from disambiguation.jsonl
+  Loaded 49 from persona_hal9000.jsonl
+
+New v3 examples: 283
+V2 base examples: 1872 (skipped 35 overlapping/invalid)
+Total combined: 2155
+
+Output: /mnt/zardos/charm-hal-env/training_data/v3/hal_training_v3.jsonl
+Lines: 2155
+
+Breakdown:
+  V2 base (minus overlaps): 1872
+  corrections_2026-05-19.jsonl: 114
+  nl_sensor_mapping.jsonl: 95
+  disambiguation.jsonl: 25
+  persona_hal9000.jsonl: 49
+=== Done Wed May 20 04:58:38 AM UTC 2026 ===

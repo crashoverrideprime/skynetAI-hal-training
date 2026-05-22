@@ -34,3 +34,12 @@ train_v2_debug.log
 !secrets
 training_data/ha_snapshot.json
 training_data/v2/ha_states.json
+
+# PyTorch optimizer checkpoints (170MB+, exceed GitHub 100MB limit)
+*.pt
+*.pth
+checkpoint-*/
+old_checkpoints/
+training_runs/*/checkpoint-*/
+training_runs/*/old_checkpoints/
+training_data/v3/ha_states.json

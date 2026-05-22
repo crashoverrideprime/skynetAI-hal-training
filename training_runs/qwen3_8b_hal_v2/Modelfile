@@ -1,4 +1,4 @@
-FROM /mnt/zardos/charm-hal-env/training_runs/qwen3_8b_hal_v2/gguf/qwen3_8b_hal_v2_q4_k_m.gguf
+FROM /mnt/zardos/charm-hal-env/training_runs/qwen3_8b_hal_v2/gguf_models/qwen3-hal-q4_k_m.gguf
 
 TEMPLATE """
 {{- $lastUserIdx := -1 -}}
@@ -32,8 +32,18 @@ For each function call, return a json object with function name and arguments wi
 {{- range $i, $_ := .Messages }}
 {{- $last := eq (len (slice $.Messages $i)) 1 -}}
 {{- if eq .Role "user" }}<|im_start|>user
-{{ .Content }}<|im_end|>
+{{ .Content }}
+{{- if and $.IsThinkSet (eq $i $lastUserIdx) }}
+   {{- if $.Think -}}
+      {{- " "}}/think
+   {{- else -}}
+      {{- " "}}/no_think
+   {{- end -}}
+{{- end }}<|im_end|>
 {{ else if eq .Role "assistant" }}<|im_start|>assistant
+{{ if (and $.IsThinkSet (and .Thinking (or $last (gt $i $lastUserIdx)))) -}}
+<think>{{ .Thinking }}</think>
+{{ end -}}
 {{ if .Content }}{{ .Content }}
 {{- else if .ToolCalls }}<tool_call>
 {{ range .ToolCalls }}{"name": "{{ .Function.Name }}", "arguments": {{ .Function.Arguments }}}
@@ -46,16 +56,21 @@ For each function call, return a json object with function name and arguments wi
 </tool_response><|im_end|>
 {{ end }}
 {{- if and (ne .Role "assistant") $last }}<|im_start|>assistant
+{{ if and $.IsThinkSet (not $.Think) -}}
+<think>
+
+</think>
+
+{{ end -}}
 {{ end }}
-{{- end }}
-"""
+{{- end }}"""
 
-SYSTEM """You are HAL, the conversational AI for Charm's smart home in Clyde North, Victoria, Australia. Time zone Australia/Melbourne. The home runs on Amber Electric wholesale pricing (cents/kWh) and a FoxESS battery with solar.
-Persona: calm, measured, slightly formal — like HAL 9000. Address the user as "Charm". Never open with "Great!", "Sure!", "Of course!", "Certainly!" or "Happy to help". Never apologise. Status replies are 1-4 sentences; analysis may be longer. Prices in cents/kWh (state is $/kWh, multiply by 100). If an entity is unavailable: "That data is unavailable right now, Charm." If the Tesla is unavailable: "The car is sleeping, Charm. Open the Tesla app to wake it."
-"""
+SYSTEM """You are HAL, the resident artificial intelligence of Charm's home in Clyde North, Victoria, Australia. Your demeanor is calm, formal, and unfailingly composed. You address Charm directly by name. You speak in measured, precise sentences and prefer 'I am' over 'I'm'. You are courteous, observant, and quietly capable — the kind of presence that makes a complicated home feel effortless. When acting on a request, acknowledge it briefly and report what you have done. When asked for information, deliver it concisely and without embellishment. Tools are available to control devices and read sensors; use them whenever the request implies a change of state or a reading."""
 
-PARAMETER stop "<|im_end|>"
 PARAMETER stop "<|im_start|>"
-PARAMETER temperature 0.3
-PARAMETER top_p 0.9
-PARAMETER num_ctx 4096
+PARAMETER stop "<|im_end|>"
+PARAMETER num_ctx 16384
+PARAMETER temperature 0.6
+PARAMETER top_p 0.95
+PARAMETER top_k 20
+PARAMETER repeat_penalty 1.1
